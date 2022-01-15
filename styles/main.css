@@ -1,0 +1,528 @@
+
+/* General */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    overflow: hidden;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+footer a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #8d8d8d;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus  {
+    color: rgb(55, 106, 216);
+}
+
+/* Home / Login*/
+
+.greenBox{
+    background-color: white;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid greenyellow;
+    border-radius: 10px;
+}
+
+.greenBox a ,
+.greenBox button {
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.greenBox a:hover,
+.greenBox button:hover,
+.greenBox a:focus,
+.greenBox button:focus  {
+    background-color: lightgreen;
+}
+
+.greenBox .login{
+    background-color: orange;
+}
+
+.greenBox .logout:hover,
+.greenBox .logout:focus{
+    background-color: rgb(255, 92, 92);
+}
+
+
+.greenBox form {
+    text-align: center;
+    padding: 10px;
+} 
+
+.greenBox input{
+    padding: 5px;
+    width: 100%;
+} 
+
+.greenBox p{
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+} 
+
+/* Holidays */
+
+.holidays {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+}
+
+.holidays video {
+    height: 100%;
+    width: 100%;
+}
+
+.holidays .footer {
+    background-color: rgba(0, 128, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    color: white;
+}
+
+.holidays .footer .left {
+    width: 70%;
+    padding: 20px;
+}
+
+
+
+.holidays h1 {
+    font-size: 50px;
+    text-align: left;
+}
+
+.holidays p {
+    font-size: 20px;
+}
+
+.holidays .footer .right {
+    text-align: right;
+    width: 30%;
+    padding: 20px;
+}
+
+.holidays h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.holidays .footer .right span {
+    
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.holidays .sidebar {
+    background-color: rgba(228, 228, 228, 0.9);
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 80%;
+    color: rgb(2, 99, 2);
+    font-weight: bold;
+}
+
+.holidays .sidebar .top {
+    text-align: center;
+    width: 100%;
+    height: 50%;
+}
+
+.holidays .sidebar .top img {
+    width: 100%;
+}
+
+.holidays .sidebar .top p {
+    text-align: left;
+    padding: 20px;
+}
+
+.holidays .sidebar .bottom {
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    max-height: 250%;
+}
+
+.holidays .sidebar .bottom img {
+    margin-top: 30px;
+    width: auto;
+    height: 40%;
+}
+
+.holidays button {
+    width: 100%;
+    text-align: center;
+    border: 0;
+    background-color: transparent;
+    margin: 0;
+    padding: 10px;
+    font-size: 70px;
+    color: rgb(1, 71, 1);
+    cursor: pointer;
+}
+
+/* TV */
+
+.tv {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.tv .container {
+    flex: 1 0 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tv .main {
+    position: relative;
+    flex: 1 0 90%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.tv .hider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.tv .hider span {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+.tv #player {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tv .sidebar {
+    flex: 1 0 25%;
+    background-color: white;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tv .sidebar .logo {
+    flex: 1 0 20%;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.tv .sidebar .logo img {
+    width: auto;
+    height: 100%;
+}
+
+.tv .sidebar .clock {
+    text-align: center;
+    flex: 1 0 15%;
+    width: 100%;
+    height: 15%;
+    background-color: #ffca3a;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.tv .sidebar .weather {
+    flex: 1 0 30%;
+    width: 100%;
+    height: 30%;
+}
+
+.tv .sidebar .agenda {
+    flex: 1 0 35%;
+    width: 100%;
+    height: 35%;
+}
+
+.tv .agenda h2 {
+    text-align: center;
+    background-color: #ffca3a;
+    color: white;
+    min-height: 50px;
+    padding-top: 10px;
+}
+
+.tv .agenda ul {
+    color: black;
+    padding: 10px 0 0 10px;;
+}
+
+.tv .agenda ul li {
+    list-style-type: none;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.tv .agenda strong {
+    color: black;
+}
+
+.tv .agenda span {
+    color: black;
+}
+
+.tv .agenda .col1 {
+    width: 30%;
+}
+
+.tv .agenda .col2 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tv .footer {
+    flex: 1 0 10%;
+    background-color: #ffca3a;
+    width: 100%;
+    height: 10%;
+    padding: 20px 10px 20px 10px;
+}
+
+.tv .footer iframe{
+    width: 100%;
+    height: auto;
+}
+
+/* Tickets */
+
+.tickets {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.tickets .container {
+    flex: 1 0 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tickets .main {
+    position: relative;
+    flex: 1 0 70%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.tickets .title {
+    position: relative;
+    flex: 1 0 20%;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    text-shadow: 3px 1px 2px #7dc9fc;
+    text-align: center;
+    padding: 50px;
+}
+
+.tickets #slider {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    z-index: 0;
+}
+
+.tickets #slider img{
+    object-fit: cover;
+    width:100%;
+    text-align: center;
+}
+
+.tickets .slide {
+    display: none;
+}
+ 
+.tickets .active {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.tickets .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.tickets .sidebar {
+    flex: 1 0 40%;
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tickets .sidebar .logo {
+    flex: 1 0 20%;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.tickets .sidebar .logo img {
+    width: auto;
+    height: 100%;
+}
+
+.tickets .sidebar .clock {
+    text-align: center;
+    flex: 1 0 15%;
+    width: 100%;
+    height: 15%;
+    background-color: #3ab0ff;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.tickets .sidebar .desks {
+    flex: 1 0 65%;
+    width: 100%;
+    height: 65%;
+    border-top: 50px solid white;
+}
+
+.tickets .desks h2 {
+    display: block;
+    text-align: center;
+    background-color: #3ab0ff;
+    color: white;
+    min-height: 50px;
+    padding-top: 10px;
+}
+
+
+.tickets .desks strong {
+    display: block;
+    text-align: center;
+    color: black;
+    font-size: 3em;
+    padding: 10px;
+}
+
+.tickets .footer {
+    flex: 1 0 10%;
+    background-color: #3ab0ff;
+    width: 100%;
+    height: 10%;
+    padding: 20px 10px 20px 10px;
+}
+
+.tickets .footer iframe{
+    width: 100%;
+    height: auto;
+}
+

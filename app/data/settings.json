@@ -1,0 +1,33 @@
+{
+"tv" : [
+    { 
+        "logo": "/files/TV.png", 
+        "rssapp": "https://rss.app/embed/v1/ticker/OAB5pdNlevFh6RtE", 
+        "ytID": "lmvA8h0OPVk", 
+        "weatherCity": "esposende" 
+    }
+],
+
+"tickets" : [
+    { 
+        "logo": "/files/hospital_logo.png", 
+        "rssapp": "https://rss.app/embed/v1/ticker/OAB5pdNlevFh6RtE", 
+        "title": "Hospital Saúde +", 
+        "image1": "/files/hospital1.jpg",
+        "image2": "/files/hospital2.png",
+        "image3": "/files/hospital3.jpg"
+    }
+],
+"holidays" : [
+    { 
+        "logo": "/files/logo.png",
+        "texto": "Esta, e muitas outras experiencias para si. Consulte no balcão a sua proxima aventura.",
+        "destino1": "Maldivas", 
+        "preco1": "999€", 
+        "video1": "files/M_video.mp4",
+        "destino2": "Paris", 
+        "preco2": "399€", 
+        "video2": "files/P_video.mp4"  
+    }
+]
+}
